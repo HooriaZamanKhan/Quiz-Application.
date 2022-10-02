@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="app.js">
+</head>
+<body style="background-color: slateblue">
+
+
+  <div id="form" >
+    <div class="setform" >
+    <h2>lOGIN</h2>
+    <label><i>Full Name:</i></label> 
+    <br><input type="text"  id="name2" autocomplete="off" ><br><br>
+    <label><i> Passward </i><br>
+    <input type="password" id="pass2" name="pwd"><br><br>
+     <!-- <a href="./start.html"> -->
+      <button onclick="login()" >login</button>
+  </div>
+  </div>
+
+
+  <script>
+    function login(){
+    var a = document.getElementById('name2').value;
+    var b = document.getElementById('pass2').value;
+    var c = localStorage.getItem('full name');
+    var d =  localStorage.getItem('pass');
+
+  
+    if(a == c && b == d ){
+
+        alert('THANKS FOR LOGIN')
+        window.location.href = "start.html";
+    }
+    else{
+        alert('check your passward and name')
+    }
+}
+  </script>
+</body>
+</html>

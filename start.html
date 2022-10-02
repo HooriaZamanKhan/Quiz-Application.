@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Application </title>
+    <link rel="stylesheet" href="3style.css">
+
+    <style>
+        .startquiz{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px black (100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+} 
+
+h1{
+    text-align: center;
+    
+}
+body{
+    background-color: slateblue;
+    color: whitesmoke;
+    padding-top: 250px;
+}
+ button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+button:focus{
+    outline: none;
+    background-color:  slategrey;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="start-quiz" >
+
+        <h1>Welcome  <script>  document.write(localStorage.getItem('full name')) </script></h1>
+
+        
+        <a href="./question.html"><button type="submit">Start Quiz</button></a>
+    </div>
+</body>
+</html>
